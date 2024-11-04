@@ -1,6 +1,7 @@
 
 import './App.css';
 import Form from './components/Form';
+import { color } from './context/Black';
 // import About from './pages/About';
 // import Homepage from './pages/Homepage';
 // import {BrowserRouter, Routes, Route} from "react-router-dom"
@@ -9,6 +10,8 @@ function App() {
  
 
   return (
+    <color.Provider value ="black">
+    
     <div>
         <Form/>
       {/* <BrowserRouter>
@@ -21,6 +24,7 @@ function App() {
       </BrowserRouter> */}
 
     </div>
+    </color.Provider>
       
   )
 }
